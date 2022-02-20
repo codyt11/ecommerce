@@ -18,7 +18,7 @@ class SignIn extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault();
-    window.location.href='/';
+    
     const {email, password } = this.state;
     
     try {
@@ -28,6 +28,8 @@ class SignIn extends React.Component {
       console.log(error);
     }
     
+    window.location.href='/';
+
   };
 
   handleChange = event => {
